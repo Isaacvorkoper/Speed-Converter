@@ -24,5 +24,15 @@ namespace Hastighed
         {
             InitializeComponent();
         }
+
+        private void kmBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void msBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
