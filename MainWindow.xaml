@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hastighed"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="450" ResizeMode="CanMinimize" Background="#FFF6F6F6">
+        Title="MainWindow" Height="257.867" Width="415.067" ResizeMode="CanMinimize" Background="#FFF6F6F6">
     <Grid>
-        <TextBox x:Name="kmBox" HorizontalAlignment="Left" Height="23" Margin="26,141,0,0"
-                 TextWrapping="Wrap" Text="" TextAlignment="Center" TextChanged="kmBox_TextChanged" VerticalAlignment="Top" Width="157"/>
-        <TextBox x:Name="msBox" HorizontalAlignment="Left" Height="23" Margin="253,141,0,0"
+        <TextBox x:Name="kmtBox" HorizontalAlignment="Left" Height="23" Margin="85,63,0,0"
+                 TextWrapping="Wrap" Text="" TextAlignment="Center" TextChanged="kmtBox_TextChanged" VerticalAlignment="Top" Width="157" GotKeyboardFocus="kmtBox_GotKeyboardFocus"/>
+        <TextBox x:Name="msBox" HorizontalAlignment="Left" Height="23" Margin="85,133,0,0" GotKeyboardFocus="msBox_GotKeyboardFocus"
                  TextWrapping="Wrap" Text="" TextAlignment="Center" VerticalAlignment="Top" Width="157" TextChanged="msBox_TextChanged"/>
-        <Label Content="km/t" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Margin="73,83,0,0"/>
-        <Label Content="m/s" HorizontalAlignment="Left" Margin="311,83,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="km/t" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Margin="266,51,0,0" Height="35" Width="61"/>
+        <Label Content="m/s" HorizontalAlignment="Left" Margin="266,119,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" RenderTransformOrigin="0.414,0.19"/>
     </Grid>
 </Window>
