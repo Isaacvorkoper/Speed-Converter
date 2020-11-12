@@ -55,7 +55,7 @@ namespace Hastighed
             {
                 try
                 {
-                    kmtBox.Text = (double.Parse(msBox.Text) / 3.6).ToString() + " km/t";
+                    kmtBox.Text = (double.Parse(msBox.Text) / 3.6).ToString();
                     kmtBox.CaretIndex = msBox.Text.Length;
                 }
                 catch (Exception)

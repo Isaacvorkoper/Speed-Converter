@@ -5,13 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hastighed"
         mc:Ignorable="d"
-        Title="MainWindow" Height="257.867" Width="415.067" ResizeMode="CanMinimize" Background="#FFF6F6F6">
+        Title="MainWindow" Height="257.867" Width="393.734" ResizeMode="CanMinimize">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#F0EB36" Offset="0.0"/>
+            <GradientStop Color="#73C269" Offset="0.5"/>
+            <GradientStop Color="#1E91A5" Offset="1.0"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        <TextBox x:Name="kmtBox" HorizontalAlignment="Left" Height="23" Margin="85,63,0,0"
-                 TextWrapping="Wrap" Text="" TextAlignment="Center" TextChanged="kmtBox_TextChanged" VerticalAlignment="Top" Width="157" GotKeyboardFocus="kmtBox_GotKeyboardFocus"/>
-        <TextBox x:Name="msBox" HorizontalAlignment="Left" Height="23" Margin="85,133,0,0" GotKeyboardFocus="msBox_GotKeyboardFocus"
-                 TextWrapping="Wrap" Text="" TextAlignment="Center" VerticalAlignment="Top" Width="157" TextChanged="msBox_TextChanged"/>
-        <Label Content="km/t" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Margin="266,51,0,0" Height="35" Width="61"/>
-        <Label Content="m/s" HorizontalAlignment="Left" Margin="266,119,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" RenderTransformOrigin="0.414,0.19"/>
+        <TextBox x:Name="kmtBox" Style="{StaticResource BlackBorderLabel}" HorizontalAlignment="Left" Height="35" Margin="68,56,0,0"
+                 TextWrapping="Wrap" Text="" TextAlignment="Center" TextChanged="kmtBox_TextChanged" VerticalAlignment="Top" Width="190" GotKeyboardFocus="kmtBox_GotKeyboardFocus" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="msBox" Style="{StaticResource BlackBorderLabel}" HorizontalAlignment="Left" Height="35" Margin="68,133,0,0" GotKeyboardFocus="msBox_GotKeyboardFocus"
+                 TextWrapping="Wrap" Text="" TextAlignment="Center" VerticalAlignment="Top" Width="190" TextChanged="msBox_TextChanged" VerticalContentAlignment="Center"/>
+
+        <Label Content="km/t" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Margin="270,49,0,0" Height="42" Width="71" FontFamily="Gadugi"/>
+        <Label Content="m/s" HorizontalAlignment="Left" Margin="270,124,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="28" RenderTransformOrigin="0.414,0.19" FontFamily="Gadugi"/>
     </Grid>
 </Window>
