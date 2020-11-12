@@ -31,11 +31,16 @@ namespace Hastighed
             {
                 msBox.Text = "";
             }
+            else if (msBox.IsFocused)
+            {
+
+            }
             else
             {
                 try
                 {
-                    msBox.Text = (double.Parse(kmtBox.Text) * 3.6).ToString();
+                    var x = Math.Round(float.Parse(kmtBox.Text) / 3.6, 5).ToString(); ;
+                    msBox.Text = x;
                     msBox.CaretIndex = msBox.Text.Length;
                 }
                 catch (Exception)
@@ -51,11 +56,15 @@ namespace Hastighed
             {
                 kmtBox.Text = "";
             }
+            else if(kmtBox.IsFocused){
+
+            }
             else
             {
                 try
                 {
-                    kmtBox.Text = (double.Parse(msBox.Text) / 3.6).ToString();
+                    var x = Math.Round(float.Parse(msBox.Text) * 3.6, 5).ToString();
+                    kmtBox.Text = x;
                     kmtBox.CaretIndex = msBox.Text.Length;
                 }
                 catch (Exception)

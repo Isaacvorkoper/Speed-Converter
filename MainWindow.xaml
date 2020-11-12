@@ -19,7 +19,7 @@
         <TextBox x:Name="msBox" Style="{StaticResource BlackBorderLabel}" HorizontalAlignment="Left" Height="35" Margin="68,133,0,0" GotKeyboardFocus="msBox_GotKeyboardFocus"
                  TextWrapping="Wrap" Text="" TextAlignment="Center" VerticalAlignment="Top" Width="190" TextChanged="msBox_TextChanged" VerticalContentAlignment="Center"/>
 
-        <Label Content="km/t" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Margin="270,49,0,0" Height="42" Width="71" FontFamily="Gadugi"/>
+        <Label Content="km/t" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Margin="270,56,0,0" Height="42" Width="71" FontFamily="Gadugi"/>
         <Label Content="m/s" HorizontalAlignment="Left" Margin="270,124,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="28" RenderTransformOrigin="0.414,0.19" FontFamily="Gadugi"/>
     </Grid>
 </Window>
